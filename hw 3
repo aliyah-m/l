@@ -1,0 +1,51 @@
+<?php
+echo "we are in get_action_page.php<br>";
+$firstNameGet=filter_input(INPUT_GET, "firstname");
+if(isset($firstNameGet)){
+	if ($firstNameGet != ''){
+		echo "First name(GET) is $firstNameGet<br>";
+	}
+	else{
+		echo "First name(GET) is an empty input.<br>";
+	}
+} 
+$lastNameGet=filter_input(INPUT_GET, "lastname");
+if(isset($lastNameGet)){
+	if ($lastNameGet != ''){
+		echo "Last name(GET) is $lastNameGet<br>";
+	}
+	else{
+		echo "Last name(GET) is an empty input.<br>";
+	}
+} 
+$passwordGet=filter_input(INPUT_GET, "password");
+if(isset($passwordGet)){
+	if ($passwordGet != ''){
+		echo "Password(GET) is $passwordGet<br>";
+	}
+	else{
+		echo "Password(GET) is an empty input.<br>";
+	}
+} 
+
+$radioButtonGet=filter_input(INPUT_GET, "gender");
+if (isset($radioButtonGet)){
+	if ($radioButtonGet != ''){
+		echo "The gender(GET) is $radioButtonGet<br>";
+	}
+	else{
+		echo "The gender(GET) is an empty input.<br>";
+	}
+}
+
+$paymentMethodGet=filter_input(INPUT_GET,"card_type");
+if(isset($paymentMethodGet)){
+	if ($paymentMethodGet != ''){
+		echo "The payment method(GET) is $paymentMethodGet<br>";
+	}
+	else{
+		echo "The payment method(GET) is an empty input.<br>";
+	}
+}
+
+?>
